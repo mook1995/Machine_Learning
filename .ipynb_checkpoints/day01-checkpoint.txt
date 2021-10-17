@@ -1,0 +1,58 @@
+AI (Artificial Inteligence)
+
+Expert System
+  -Rule base: ex) decision tree
+  의학계에서 쓰이던 decision tree라는게 있었는데
+  이것이 새로운 룰이 추가되었을때 스스로 기능을 할수 있는가
+  가 문제가 되었다.
+
+  그래서 우리가 기존에 제공하지 않은 새로운 데이터를 줬을
+  때 이것이 인간과 같은 방식으로 데이터를 받아들이도록 하려면
+  어떻게 해야 하나 하는것이 Machine learning의 시작
+
+    -deep learning도 이 machine learning의 한 분야다.
+    현재 machine learning 분야에서 가장 핫한 주제가 deep learning임
+    우리가 주로 팔것도 이 deep learning인데 이것만 1주일을 할것입니다.
+    deep learning의 기본 원리를 깨우치기 위해 수학 공식까지 팔거에요
+
+$conda install jupyterlab
+
+
+
+
+#Iris품종 종류: setosa, versicolor, virginica
+    꽃잎 : PETAL LENGTH, PETAL WIDTH
+    꽃 받침: SEPAL LENTH, SEPAL WIDTH
+    iris 품종은 위 두가지 속성으로 명확하게 구분이 가능한 특징을 갖는다.
+
+
+품종별 측정데이터를 이용해 새로 채집한 iris의 품종을 예측하는 ML 모델을 제작할것입니다.
+
+
+
+#학습의 종류
+  1.지도학습(supervised learning): 어떤 조건이 있을 떄 이놈의 정답은 무엇이다라는것을 이미 알고 있음
+                                  이것을 바탕으로 학습을 시키고 새로운조건을 줬을떄 그것을 알아맞히도록 함
+
+  2.비지도학습(unsupervised learning): 정답을 모르는 상태에서 주어진 데이터를 가지고 무언가를 해야 하는것이다.
+
+
+#우리가 진행할 iris품종 맞추기도 이미 정답이 있기 때문에 지도학습입니다.
+
+
+
+
+#알고리즘의 종류
+
+  1.회귀 (regression)
+  :새로운 x값이 주어졌을때의 y값을 맞추는것
+
+
+  2.분류문제(classification)
+  :조건이 들어왔을때 회귀로 다룰수없고 이걸 분류하는문제
+  iris붓꽃 문제가 여기에 해당한다.
+  Iris문제에서 입력값이 4개인데 이걸 feature라고 합니다.
+  그리고 이것에 대한 class, label, target이라고 하는데 이건 각각 3개씩이다.
+  그래서 우리는 입력 feature 가 4개 class가 3개 label이 3개 target이 3개인 문제를 푸는것입니다.
+
+  샘플은 feature와 target의 묶음이다. feature에 따라 target이 어떻게 변하는지 하는것이다.
